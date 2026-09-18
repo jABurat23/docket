@@ -22,7 +22,7 @@ export function SpineNav() {
           className="mb-8 flex h-10 w-10 items-center justify-center rounded-full border border-line-strong bg-[radial-gradient(circle_at_30%_30%,rgba(229,182,87,0.18),transparent_55%)] font-display text-[18px] text-gold shadow-[0_0_24px_rgba(229,182,87,0.18)] transition-transform duration-200 hover:scale-105"
           aria-label="Go to overview"
         >
-          D
+          <img src="/docket-mark.jpg" alt="" className="h-full w-full rounded-full object-cover object-center" />
         </Link>
 
         <nav className="flex w-full flex-1 flex-col items-center justify-center gap-4">
@@ -52,7 +52,7 @@ export function SpineNav() {
             className="flex h-8 w-8 items-center justify-center rounded-full border border-line-strong bg-[radial-gradient(circle_at_30%_30%,rgba(229,182,87,0.18),transparent_55%)] font-display text-[15px] text-gold"
             aria-label="Go to overview"
           >
-            D
+            <img src="/docket-mark.jpg" alt="" className="h-full w-full rounded-full object-cover object-center" />
           </Link>
 
           <nav className="flex min-w-0 flex-1 items-center justify-start gap-1.5 overflow-x-auto pl-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">

@@ -27,12 +27,8 @@ export function Header({
         <div className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-white/[0.02] px-2.5 py-1 text-[10.5px] font-mono uppercase tracking-[0.18em] text-paper/60">
           personal finance
         </div>
-        <Link
-          href="/dashboard"
-          className="block font-display text-[32px] leading-none tracking-[-0.05em] text-paper transition-opacity duration-200 hover:opacity-80 sm:text-[38px]"
-          aria-label="Go to overview"
-        >
-          Docket
+        <Link href="/dashboard" className="block transition-opacity duration-200 hover:opacity-80" aria-label="Go to overview">
+          <img src="/docket-brand.jpg" alt="Docket" className="h-12 w-40 rounded object-cover object-center sm:h-14 sm:w-48" />
         </Link>
         <div className="font-mono text-[10px] text-paper/60 sm:text-[12px]">{today}</div>
       </div>

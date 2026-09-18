@@ -40,13 +40,10 @@ export function LoginCard() {
   return (
     <div className="w-full max-w-md rounded-lg border border-line-strong bg-panel p-7 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-sm sm:p-9">
       <div className="mb-7 flex items-center justify-center">
-        <div className="w-12 h-12 rounded-full border border-[rgba(229,182,87,0.8)] bg-[radial-gradient(circle_at_30%_30%,rgba(229,182,87,0.2),transparent_55%)] flex items-center justify-center font-display text-[26px] text-gold shadow-[0_0_24px_rgba(229,182,87,0.2)]">
-          D
-        </div>
+        <img src="/docket-brand.jpg" alt="Docket" className="h-24 w-60 rounded-lg object-cover object-center" />
       </div>
 
       <div className="text-center mb-7">
-        <div className="font-display text-3xl tracking-[-0.04em] mb-1.5">Docket</div>
         <p className="text-[13px] text-paper/60 leading-relaxed">
           Keep your pipeline, budget, and monthly report in one place.
         </p>
