@@ -2,15 +2,21 @@ import { headers } from "next/headers";
 import { ReportCard } from "@/components/report/ReportCard";
 
 async function getReport() {
-  const host = headers().get("host");
-  const protocol = host?.startsWith("localhost") ? "http" : "https";
-  const res = await fetch(`${protocol}://${host}/api/report/generate`, {
-    headers: headers(),
-    cache: "no-store",
-  });
-  if (!res.ok) return null;
-  const { report } = await res.json();
-  return report;
+  try {
+    const requestHeaders = headers();
+    const host = requestHeaders.get("host");
+    if (!host) return null;
+    const protocol = host.startsWith("localhost") || host.startsWith("127.0.0.1") ? "http" : "https";
+    const res = await fetch(`${protocol}://${host}/api/report/generate`, {
+      headers: requestHeaders,
+      cache: "no-store",
+    });
+    if (!res.ok) return null;
+    const body = await res.json();
+    return body.report ?? null;
+  } catch {
+    return null;
+  }
 }
 
 export default async function ReportPage() {
