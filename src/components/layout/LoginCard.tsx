@@ -1,6 +1,7 @@
 "use client";
 
 import { createClient } from "@/lib/supabase/client";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
@@ -71,6 +72,11 @@ export function LoginCard() {
 
       <div className="mt-6 pt-5 border-t border-line text-center text-[11.5px] text-paper/50">
         Secure sign in with Supabase Auth
+      </div>
+      <div className="mt-3 flex justify-center gap-3 text-[10.5px] text-paper/45">
+        <Link href="/privacy" className="hover:text-paper">Privacy</Link>
+        <span aria-hidden="true">·</span>
+        <Link href="/terms" className="hover:text-paper">Terms</Link>
       </div>
     </div>
   );
