@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Docket — Personal finance, clearly kept</title>
+  <desc id="desc">Docket personal finance dashboard branding.</desc>
+  <rect width="1200" height="630" fill="#0a0c0d"/>
+  <circle cx="600" cy="248" r="128" fill="none" stroke="#c79a4b" stroke-width="14"/>
+  <path d="M570 150v196M570 150h42c38 0 62 20 62 49s-24 49-62 49h-42" fill="none" stroke="#edeee9" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"/>
+  <circle cx="570" cy="150" r="7" fill="#c79a4b"/>
+  <text x="600" y="470" fill="#edeee9" font-family="Georgia, serif" font-size="74" text-anchor="middle">Docket</text>
+  <text x="600" y="520" fill="#c79a4b" font-family="Arial, sans-serif" font-size="20" letter-spacing="6" text-anchor="middle">PERSONAL FINANCE, CLEARLY KEPT</text>
+</svg>

@@ -7,8 +7,32 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const plexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-plex-mono" });
 
 export const metadata: Metadata = {
-  title: "Docket",
-  description: "Personal budget, pipeline, and revenue dashboard.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  title: {
+    default: "Docket",
+    template: "%s · Docket",
+  },
+  description: "A calm, private workspace for your budget, pipeline, goals, and monthly reports.",
+  applicationName: "Docket",
+  category: "finance",
+  keywords: ["personal finance", "budget", "goals", "freelance pipeline"],
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
+  openGraph: {
+    title: "Docket",
+    description: "Personal finance, clearly kept.",
+    siteName: "Docket",
+    type: "website",
+    images: [{ url: "/docket-logo.svg", width: 1200, height: 630, alt: "Docket personal finance dashboard" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Docket",
+    description: "Personal finance, clearly kept.",
+    images: ["/docket-logo.svg"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

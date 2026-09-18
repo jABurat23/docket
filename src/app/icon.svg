@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>Docket</title>
+  <rect width="512" height="512" rx="112" fill="#0a0c0d"/>
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#c79a4b" stroke-width="18"/>
+  <path d="M214 150v212M214 150h54c48 0 78 25 78 64s-30 64-78 64h-54" fill="none" stroke="#edeee9" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+  <circle cx="214" cy="150" r="8" fill="#c79a4b"/>
+</svg>
